@@ -1,6 +1,6 @@
 # **IBM HR Analytics Attrition Dataset Analysis**
 
-This repository contains code and analysis for the IBM HR Analytics Attrition Dataset. The dataset provides information related to employee attrition in an IBM organization, aiming to predict employee turnover using a decision tree classifier. 
+This repository contains code and analysis for the IBM HR Analytics Employee Attrition & Performance Dataset. 
 
 ## **Dataset**
 
