@@ -44,3 +44,8 @@ The project evaluated the performance of the decision tree classifiers under thr
         Recall: 0.42 (Class 0), 0.87 (Class 1)
         F1-Score: 0.40 (Class 0), 0.88 (Class 1)
         ROC AUC: 0.6469
+
+
+## **Conclusion**
+
+The analysis explored employee attrition prediction using the IBM HR Dataset. Class imbalance was addressed through undersampling of the majority class and assigning class weights. The performance evaluation revealed that the original model achieved the highest accuracy (0.8027). However, further improvements can be made to balance the precision and recall for both classes. Additional feature engineering or an ensemble models might enhance the model's performance.
