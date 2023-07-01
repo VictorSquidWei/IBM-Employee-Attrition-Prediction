@@ -13,39 +13,62 @@ This repository contains code and analysis for the IBM HR Analytics Employee Att
 - `IBMHRProject.ipynb`: Jupyter Notebook containing the code and analysis for the project.
 - `WA_Fn-UseC_-HR-Employee-Attrition.csv`: Dataset file used in the analysis.
 
-## **Addressing Class Imbalance**
+## **Models and Results**
+Several models have been implemented and evaluated in this project. Here are the results of the model performances:
 
-Two methods were implemented to address the class imbalance:
+    Decision Tree Classifier (Baseline)
+        Accuracy: 75.51%
+        Precision (0): 23%
+        Precision (1): 87%
+        Recall (0): 28%
+        Recall (1): 84%
 
-- Undersampling of Majority Class: The majority class (No Employee Attrition) was undersampled to match the number of instances in the minority class (Employee Attrition).
-- Class Weights: Higher weights were assigned to the minority class during model training.
+    Class Weights
+        Accuracy: 75.17%
+        Precision (0): 22%
+        Precision (1): 87%
+        Recall (0): 28%
+        Recall (1): 83%
 
-## **Model Performance**
+    Balancing the Dataset
+        Accuracy: 54.42%
+        Precision (0): 16%
+        Precision (1): 87%
+        Recall (0): 51%
+        Recall (1): 55%
 
-The project evaluated the performance of the decision tree classifiers under three different training approaches:
+    Bagging (with Grid Search)
+        Accuracy: 85.37%
+        Precision (0): 50%
+        Precision (1): 87%
+        Recall (0): 19%
+        Recall (1): 97%
 
-    Undersampling of Majority Class:
-        Accuracy: 0.6020
-        Precision: 0.24 (Class 0), 0.92 (Class 1)
-        Recall: 0.71 (Class 0), 0.58 (Class 1)
-        F1-Score: 0.35 (Class 0), 0.71 (Class 1)
-        ROC AUC: 0.6467
+    Random Forest (with Grid Search)
+        Accuracy: 86.05%
+        Precision (0): 55%
+        Precision (1): 89%
+        Recall (0): 28%
+        Recall (1): 96%
 
-    Class Weights:
-        Accuracy: 0.7687
-        Precision: 0.29 (Class 0), 0.88 (Class 1)
-        Recall: 0.36 (Class 0), 0.84 (Class 1)
-        F1-Score: 0.32 (Class 0), 0.86 (Class 1)
-        ROC AUC: 0.5995
+    Gradient Boosting (with Grid Search)
+        Accuracy: 87.76%
+        Precision (0): 71%
+        Precision (1): 89%
+        Recall (0): 28%
+        Recall (1): 98%
 
-    Original Model (No Modification for Class Imbalance):
-        Accuracy: 0.8027
-        Precision: 0.37 (Class 0), 0.89 (Class 1)
-        Recall: 0.42 (Class 0), 0.87 (Class 1)
-        F1-Score: 0.40 (Class 0), 0.88 (Class 1)
-        ROC AUC: 0.6469
+## **Performance Evaluation**
+The performance of the models is assessed based on accuracy, precision, recall, and F1-score. The classification reports and confusion matrices provide a comprehensive understanding of model performance for both 0s (no employee attrition) and 1s (employee attrition present). Additionally, ROC AUC is computed to evaluate the models' ability to discriminate between the two classes.
 
+## **Usage**
+To run the Jupyter Notebook file `IBMHRProject.ipynb`, it is recommended to use Google Colab due to resource-intensive computations involved in ensemble methods. Make sure to have the dataset file WA_Fn-UseC_-HR-Employee-Attrition.csv available in a working directory.
 
 ## **Conclusion**
+In this project, we explored different machine learning techniques to predict employee attrition. The ensemble methods, such as Bagging, Random Forest, and Gradient Boosting, showed improved performance compared to the baseline decision tree model. By leveraging these techniques, we achieved higher accuracy and better prediction capabilities.
 
-The analysis explored employee attrition prediction using the IBM HR Dataset. Class imbalance was addressed through undersampling of the majority class and assigning class weights. The performance evaluation revealed that the original model achieved the highest accuracy (0.8027). However, further improvements can be made to balance the precision and recall for both classes. Additional feature engineering or an ensemble models might enhance the model's performance.
+The results highlight the importance of considering class imbalance and utilizing ensemble methods to tackle this challenge. The Random Forest and Gradient Boosting models outperformed other approaches, demonstrating their ability to handle complex relationships within the dataset.
+
+This project provides insights into employee attrition factors and offers predictive models that can assist HR departments in understanding and managing attrition risks. Further improvements and optimizations can be explored to enhance the models' performance and cater to specific organizational needs.
+
+Please refer to the Jupyter Notebook file for a detailed implementation of the models, including data preprocessing, model training, hyperparameter tuning, and performance evaluation.
