@@ -1,7 +1,5 @@
 # **IBM HR Analytics Attrition Dataset Analysis**
 
-This repository contains code and analysis for the IBM HR Analytics Employee Attrition & Performance Dataset. 
-
 ## **Dataset**
 
 - The dataset used in this project is `WA_Fn-UseC_-HR-Employee-Attrition.csv`
