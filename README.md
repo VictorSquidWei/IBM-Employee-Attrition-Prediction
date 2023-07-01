@@ -14,7 +14,7 @@ This repository contains code and analysis for the IBM HR Analytics Employee Att
 - `WA_Fn-UseC_-HR-Employee-Attrition.csv`: Dataset file used in the analysis.
 
 ## **Models and Results**
-Several models have been implemented and evaluated in this project. Here are the results of the model performances:
+Several models have been implemented and evaluated in this project with the ensemble learning methods underwent grid search cross validation. Here are the results of the model performances:
 
     Decision Tree Classifier (Baseline)
         Accuracy: 75.51%
@@ -65,10 +65,10 @@ The performance of the models is assessed based on accuracy, precision, recall, 
 To run the Jupyter Notebook file `IBMHRProject.ipynb`, it is recommended to use Google Colab due to resource-intensive computations involved in ensemble methods. Make sure to have the dataset file WA_Fn-UseC_-HR-Employee-Attrition.csv available in a working directory.
 
 ## **Conclusion**
-In this project, we explored different machine learning techniques to predict employee attrition. The ensemble methods, such as Bagging, Random Forest, and Gradient Boosting, showed improved performance compared to the baseline decision tree model. By leveraging these techniques, we achieved higher accuracy and better prediction capabilities.
+The ensemble methods, such as Bagging, Random Forest, and Gradient Boosting, showed improved performance compared to the baseline decision tree model. By leveraging these techniques, we achieved higher accuracy and better prediction capabilities.
 
 The results highlight the importance of considering class imbalance and utilizing ensemble methods to tackle this challenge. The Random Forest and Gradient Boosting models outperformed other approaches, demonstrating their ability to handle complex relationships within the dataset.
 
 This project provides insights into employee attrition factors and offers predictive models that can assist HR departments in understanding and managing attrition risks. Further improvements and optimizations can be explored to enhance the models' performance and cater to specific organizational needs.
 
-Please refer to the Jupyter Notebook file for a detailed implementation of the models, including data preprocessing, model training, hyperparameter tuning, and performance evaluation.
+**Please refer to the Jupyter Notebook file for a detailed implementation of the models, including data preprocessing, model training, hyperparameter tuning, and performance evaluation.**
