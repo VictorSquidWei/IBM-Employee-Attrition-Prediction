@@ -62,7 +62,7 @@ Several models have been implemented and evaluated in this project with the ense
 The performance of the models is assessed based on accuracy, precision, recall, and F1-score. The classification reports and confusion matrices provide a comprehensive understanding of model performance for both 0s (no employee attrition) and 1s (employee attrition present). Additionally, ROC AUC is computed to evaluate the models' ability to discriminate between the two classes.
 
 ## **Usage**
-To run the Jupyter Notebook file `IBMHRProject.ipynb`, it is recommended to use Google Colab due to resource-intensive computations involved in ensemble methods. Make sure to have the dataset file WA_Fn-UseC_-HR-Employee-Attrition.csv available in a working directory.
+To run the Jupyter Notebook file `IBMHRProject.ipynb`, it is recommended to use Google Colab due to resource-intensive computations involved in ensemble methods. Make sure to have the dataset file `WA_Fn-UseC_-HR-Employee-Attrition.csv` available in a working directory.
 
 ## **Conclusion**
 The ensemble methods, such as Bagging, Random Forest, and Gradient Boosting, showed improved performance compared to the baseline decision tree model. By leveraging these techniques, we achieved higher accuracy and better prediction capabilities.
